@@ -1,2 +1,1 @@
-# feel-your-appetite
-What you should eat based on how you are feeling. Inspired by the Mark Forward Podcast
+This project was inspired by Eric Andrews' (@MerickMandrews) app suggestion on the Mark Forward Podcast - Episode 111 Apps.
