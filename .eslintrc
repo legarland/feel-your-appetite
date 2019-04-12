@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "wesbos"
+  ],
+  "rules": {
+    "camelcase": "off",
+    "react/prop-types": [
+      false,
+      {}
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "singleQuote": true
+      }
+    ]
+  }
+}
