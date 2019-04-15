@@ -11,6 +11,7 @@ export const moods = [
     related: ['Happy', 'Joyful', 'Content'],
     type: 'positive'
   },
+  { name: 'Like a King', emojis: [], related: [], type: 'positive' },
   { name: 'Energetic', emojis: [], related: [], type: 'positive' },
   { name: 'Excited', emojis: [], related: [], type: 'positive' },
   { name: 'Flirty', emojis: [], related: [], type: 'positive' },
@@ -42,6 +43,56 @@ export const moods = [
   { name: 'Rejected', emojis: [], related: [], type: 'negative' },
   { name: 'Restless', emojis: [], related: [], type: 'negative' },
   { name: 'Sad', emojis: [], related: [], type: 'negative' },
+  { name: 'Devastated', emojis: [], related: [], type: 'negative' },
   { name: 'Stressed', emojis: [], related: [], type: 'negative' },
+  { name: 'Upset', emojis: [], related: [], type: 'negative' },
   { name: 'Weird', emojis: [], related: [], type: 'negative' }
 ]
+
+export const food = [
+  {
+    name: 'Strawberries',
+    image:
+      'https://greenblender.com/smoothies/wp-content/uploads/2015/12/smoothies-with-strawberries-by-Green-Blender-960x540.jpg',
+    moods: ['Sad', 'Melancholy', 'Stressed', 'Depressed']
+  },
+  {
+    name: 'Dark Chocolate',
+    image:
+      'https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2017/02/DarkChocolate-Featured.jpg',
+    moods: ['Irritated', 'Envious', 'Frustrated']
+  },
+  {
+    name: 'Mac and Cheese',
+    image: '',
+    moods: ['Sad']
+  },
+  {
+    name: 'Tomato Soup',
+    image: '',
+    moods: ['Upset', 'Angry']
+  },
+  {
+    name: 'Grilled Cheese',
+    image: '',
+    moods: ['Nostalgic']
+  },
+  {
+    name: 'Turkey Leg',
+    image: '',
+    moods: ['Like a King']
+  },
+  {
+    name: 'Avocado Salad',
+    image: '',
+    moods: ['Happy']
+  },
+  {
+    name: 'Quinoa Salad',
+    iamge: '',
+    moods: ['Devastated']
+  }
+]
+
+export const getFoodbyMood = mood =>
+  food.filter(f => f.moods.indexOf(mood) !== -1)
