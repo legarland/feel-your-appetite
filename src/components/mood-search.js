@@ -16,7 +16,7 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
     <Autocomplete
       ref={ac => (input = ac)}
       getItemValue={item => item.name}
-      items={moods}
+      items={moods.sort((a, b) => a.name.localeCompare(b.name))}
       wrapperStyle={{
         display: 'block'
       }}
@@ -30,8 +30,8 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
       renderItem={(item, isHighlighted) => (
         <div
           key={item.label}
-          className={`text-left p-4 hover:gradient-reverse font-serif ${isHighlighted &&
-            'gradient-reverse'}`}
+          className={`text-left p-4 m-2 hover:gradient-reverse font-serif ${isHighlighted &&
+            'gradient-reverse'} rounded-lg`}
         >
           {item.name}
         </div>

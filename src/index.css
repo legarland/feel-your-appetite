@@ -32,3 +32,19 @@ code {
 .gradient-reverse {
   background-image: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
 }
+
+.masonry { /* Masonry container */
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.masonry-item { /* Masonry bricks or child elements */
+  /* background-color: #eee; */
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.masonry-item img {
+  width: 100%;
+}

@@ -25,6 +25,7 @@ export const moods = [
   { name: 'Peaceful', emojis: [], related: [], type: 'positive' },
   { name: 'Silly', emojis: [], related: [], type: 'positive' },
   { name: 'Sympathetic', emojis: [], related: [], type: 'positive' },
+  { name: 'Nostalgic', emojis: [], related: [], type: 'positive' },
   { name: 'Angry', emojis: [], related: [], type: 'negative' },
   { name: 'Annoyed', emojis: [], related: [], type: 'negative' },
   { name: 'Apathetic', emojis: [], related: [], type: 'negative' },
