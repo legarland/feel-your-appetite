@@ -54,6 +54,7 @@ const colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   white: '#ffffff',
+  'white-semi-transparent': 'rgba(255,255,255,.5)',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -90,7 +91,7 @@ const colors = {
   'teal-darkest': '#0d3331',
   'teal-darker': '#20504f',
   'teal-dark': '#38a89d',
-  teal: '#4dc0b5',
+  teal: '#8CE8CE',
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
@@ -926,6 +927,7 @@ module.exports = {
   */
 
   plugins: [
+    // eslint-disable-next-line global-require
     require('tailwindcss/plugins/container')({
       // center: true,
       // padding: '1rem',

@@ -89,7 +89,7 @@ export const food = [
   },
   {
     name: 'Quinoa Salad',
-    iamge: '',
+    image: '',
     moods: ['Devastated']
   }
 ]

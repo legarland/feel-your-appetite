@@ -1,13 +1,26 @@
 import React from 'react'
-import { food, getFoodbyMood } from '../data'
+import { getFoodbyMood } from '../data'
+import FadeFromLeft from './fade-from-left'
+import FadeIn from './fade-in'
 
 const FoodResult = ({ selectedMood }) => {
   const results = getFoodbyMood(selectedMood.name)
+  const result = results[Math.floor(Math.random() * results.length)] || {}
+
   return (
-    <div className="mt-0">
-      <div className="text-3xl">Feeling {selectedMood.name}?</div>
+    <FadeIn className="mt-0 p-16 bg-white shadow-lg rounded-lg font-serif">
+      <FadeFromLeft delay={200} className="text-3xl">
+        Feeling {selectedMood.name}?
+      </FadeFromLeft>
+      <FadeFromLeft delay={700} className="text-4xl mt-8">
+        You should eat...
+      </FadeFromLeft>
+      <FadeFromLeft delay={1200}>
+        <h4>{result.name}</h4>
+        <img src={result.image || 'https://placehold.it/400x300'} alt="" />
+      </FadeFromLeft>
       {/* {results.length && results[0].name} */}
-    </div>
+    </FadeIn>
   )
 }
 
