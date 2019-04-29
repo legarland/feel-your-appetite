@@ -3,16 +3,8 @@ export const moods = [
   { name: 'Blissful', emojis: [], related: [], type: 'positive' },
   { name: 'Calm', emojis: [], related: [], type: 'positive' },
   { name: 'Cheerful', emojis: [], related: [], type: 'positive' },
-  { name: 'Content', emojis: [], related: [], type: 'positive' },
-  { name: 'Dreamy', emojis: [], related: [], type: 'positive' },
-  {
-    name: 'Ecstatic',
-    emojis: [],
-    related: ['Happy', 'Joyful', 'Content'],
-    type: 'positive'
-  },
+  { name: 'Ecstatic', emojis: [], type: 'positive' },
   { name: 'Like a King', emojis: [], related: [], type: 'positive' },
-  { name: 'Energetic', emojis: [], related: [], type: 'positive' },
   { name: 'Excited', emojis: [], related: [], type: 'positive' },
   { name: 'Flirty', emojis: [], related: [], type: 'positive' },
   { name: 'Giddy', emojis: [], related: [], type: 'positive' },
@@ -47,51 +39,209 @@ export const moods = [
   { name: 'Devastated', emojis: [], related: [], type: 'negative' },
   { name: 'Stressed', emojis: [], related: [], type: 'negative' },
   { name: 'Upset', emojis: [], related: [], type: 'negative' },
-  { name: 'Weird', emojis: [], related: [], type: 'negative' }
+  { name: 'Weird', emojis: [], related: [], type: 'negative' },
+  { name: 'Lazy', emojis: [], related: [], type: 'negative' }
 ]
 
 export const food = [
   {
     name: 'Strawberries',
-    image:
-      'https://greenblender.com/smoothies/wp-content/uploads/2015/12/smoothies-with-strawberries-by-Green-Blender-960x540.jpg',
     moods: ['Sad', 'Melancholy', 'Stressed', 'Depressed']
   },
   {
     name: 'Dark Chocolate',
-    image:
-      'https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2017/02/DarkChocolate-Featured.jpg',
     moods: ['Irritated', 'Envious', 'Frustrated']
   },
   {
     name: 'Mac and Cheese',
-    image: '',
     moods: ['Sad']
   },
   {
     name: 'Tomato Soup',
-    image: '',
     moods: ['Upset', 'Angry']
   },
   {
     name: 'Grilled Cheese',
-    image: '',
-    moods: ['Nostalgic']
+    moods: ['Nostalgic', 'Restless', 'Lazy']
   },
   {
     name: 'Turkey Leg',
-    image: '',
-    moods: ['Like a King']
+    moods: ['Like a King', 'Silly']
   },
   {
     name: 'Avocado Salad',
-    image: '',
-    moods: ['Happy']
+    moods: ['Happy', 'Apathetic']
   },
   {
     name: 'Quinoa Salad',
-    image: '',
     moods: ['Devastated']
+  },
+  {
+    name: 'Salisbury Steak',
+    moods: ['Nostalgic', 'Mellow', 'Silly']
+  },
+  {
+    name: 'Cereal',
+    moods: ['Lazy', 'Stressed', 'Nostalgic']
+  },
+  {
+    name: 'Meat Loaf',
+    moods: ['Nostalgic', 'Grumpy', 'Bad']
+  },
+  {
+    name: 'Pizza',
+    moods: [
+      'Lazy',
+      'Happy',
+      'Sad',
+      'Grumpy',
+      'Bad',
+      'Silly',
+      'Weird',
+      'Upset',
+      'Rejected',
+      'Devastated'
+    ]
+  },
+  {
+    name: 'Fried Chicken',
+    moods: ['Lazy', 'Mellow', 'Optimistic']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
+  },
+  {
+    name: '',
+    moods: ['', '']
   }
 ]
 

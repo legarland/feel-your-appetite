@@ -25,13 +25,13 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
         borderBottomRightRadius: '.5rem',
         borderBottomLeftRadius: '.5rem',
         maxHeight: '40vh',
-        overflow: 'scroll'
+        overflowY: 'scroll'
       }}
       renderItem={(item, isHighlighted) => (
         <div
-          key={item.label}
+          key={item.name}
           className={`text-left p-4 m-2 hover:gradient-reverse font-serif ${isHighlighted &&
-            'gradient-reverse'} rounded-lg`}
+            'gradient-reverse '} rounded-lg`}
         >
           {item.name}
         </div>
@@ -45,7 +45,7 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
       value={value}
       inputProps={{
         className:
-          'w-full p-6 bg-white focus:shadow-none font-serif shadow-lg focus:rounded-b-none rounded-lg outline-none text-2xl transition-fast',
+          'w-full p-5 bg-white focus:shadow-none font-serif shadow-lg focus:rounded-b-none rounded-lg outline-none text-2xl transition-fast',
         placeholder: 'Enter a mood..',
         onFocus: () => {
           console.log('resetting')

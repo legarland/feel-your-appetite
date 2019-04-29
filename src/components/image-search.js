@@ -3,19 +3,17 @@ import axios from 'axios'
 
 const CS_KEY = 'AIzaSyDE7I1yji7dxha4hgvQJ9rP4EWhoD6pc-c'
 
-const ImageSearch = ({ food }) => {
+const ImageSearch = ({ food, onImagesLoaded }) => {
   const [images, setImages] = useState([])
   useEffect(() => {
     axios({
-      url: `https://www.googleapis.com/customsearch/v1?key=${CS_KEY}&searchType=image&cx=001646449377674453720:fpmd1462yfk&q=${food}`,
+      url: `https://www.googleapis.com/customsearch/v1?key=${CS_KEY}&searchType=image&cx=001646449377674453720:fpmd1462yfk&q=${food}&webSearchResultSetSize=5`,
       responseType: 'json'
     }).then(response => {
-      console.log(response.data.items)
       setImages(response.data.items.map(item => item.image.thumbnailLink))
+      onImagesLoaded()
     })
-  }, [food])
-
-  console.log(images)
+  }, [food, onImagesLoaded])
 
   return (
     // <div className="flex flex-wrap">
