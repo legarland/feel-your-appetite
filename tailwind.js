@@ -154,7 +154,7 @@ module.exports = {
       'Courier New',
       'monospace'
     ],
-    title: ['Molle-Cursive']
+    title: ['Molle-Cursive', 'Molle']
   },
 
   /*
