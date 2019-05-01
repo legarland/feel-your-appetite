@@ -102,12 +102,12 @@ export const food = [
     moods: ['Thankful']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Ramen Noodles',
+    moods: ['Annoyed', 'Lazy', '<Indifferent></Indifferent>']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Orange',
+    moods: ['Weird', 'Silly']
   },
   {
     name: '',
