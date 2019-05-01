@@ -1691,7 +1691,7 @@ table {
 }
 
 .font-title {
-  font-family: Molle;
+  font-family: Molle-Cursive;
 }
 
 .font-hairline {
@@ -5358,7 +5358,7 @@ table {
   }
 
   .sm\:font-title {
-    font-family: Molle;
+    font-family: Molle-Cursive;
   }
 
   .sm\:font-hairline {
@@ -8981,7 +8981,7 @@ table {
   }
 
   .md\:font-title {
-    font-family: Molle;
+    font-family: Molle-Cursive;
   }
 
   .md\:font-hairline {
@@ -12604,7 +12604,7 @@ table {
   }
 
   .lg\:font-title {
-    font-family: Molle;
+    font-family: Molle-Cursive;
   }
 
   .lg\:font-hairline {
@@ -16227,7 +16227,7 @@ table {
   }
 
   .xl\:font-title {
-    font-family: Molle;
+    font-family: Molle-Cursive;
   }
 
   .xl\:font-hairline {
