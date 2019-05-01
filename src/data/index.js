@@ -27,6 +27,7 @@ export const moods = [
   { name: 'Irritated', emojis: ['😤'], related: [], type: 'negative' },
   { name: 'Melancholy', emojis: ['😢'], related: [], type: 'negative' },
   { name: 'Sad', emojis: ['🙁'], related: [], type: 'negative' },
+  { name: 'Pessimistic', emojis: ['🙁'], related: [], type: 'negative' },
   { name: 'Devastated', emojis: ['☹️'], related: [], type: 'negative' },
   { name: 'Stressed', emojis: ['😫'], related: [], type: 'negative' },
   { name: 'Upset', emojis: ['😢'], related: [], type: 'negative' },
@@ -46,11 +47,11 @@ export const food = [
   },
   {
     name: 'Mac and Cheese',
-    moods: ['Sad']
+    moods: ['Sad', 'Nostalgic', 'Lazy']
   },
   {
     name: 'Tomato Soup',
-    moods: ['Upset', 'Angry']
+    moods: ['Upset', 'Angry', 'Pessimistic']
   },
   {
     name: 'Grilled Cheese',
@@ -66,7 +67,7 @@ export const food = [
   },
   {
     name: 'Quinoa Salad',
-    moods: ['Devastated']
+    moods: ['Devastated', 'Angry']
   },
   {
     name: 'Salisbury Steak',
@@ -98,7 +99,7 @@ export const food = [
   },
   {
     name: 'Orange',
-    moods: ['Weird', 'Silly']
+    moods: ['Weird', 'Silly', 'Angry']
   },
   {
     name: 'Chocolate Covered Straweberries',
@@ -199,32 +200,39 @@ export const food = [
     moods: ['Weird', 'Lazy', 'Silly', 'Apathetic', 'Mellow']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Chicken Legs',
+    moods: ['Angry', 'Frustrated', 'Irritated', 'Cranky']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Cake',
+    moods: ['Sleepy', 'Happy', 'Excited', 'Ecstatic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Donuts',
+    moods: ['Sleepy', 'Happy', 'Sad', 'Grumpy', 'Weird', 'Silly', 'Cranky']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Boiled Egg',
+    moods: ['Guilty', 'Mellow', 'Indifferent', 'Pessimistic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Fried Eggs',
+    moods: ['Good', 'Happy', 'Optimistic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Beef Jerky',
+    moods: [
+      'Angry',
+      'Frustrated',
+      'Irritated',
+      'Cranky',
+      'Pessimistic',
+      'Annoyed'
+    ]
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Summer Sausage',
+    moods: ['Nostalgic']
   },
   {
     name: '',
