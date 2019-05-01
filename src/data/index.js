@@ -235,20 +235,20 @@ export const food = [
     moods: ['Nostalgic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Cheese Stick',
+    moods: ['Lazy', 'Nostalgic', 'Mellow', 'Silly']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Nachos',
+    moods: ['Happy', 'Ecstatic', 'Amused', 'Adventurous', 'Good']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Burrito',
+    moods: ['Irritated', 'Apathetic', 'Pessimistic', 'Upset', 'Sad']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Taco',
+    moods: ['Happy', 'Good', 'Optimistic']
   }
 ]
 
