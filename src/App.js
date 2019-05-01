@@ -15,7 +15,7 @@ class App extends Component {
 
     return (
       <div className="container text-center p-4 sm:p-0 mx-auto mt-2 sm:mt-12 mb-12">
-        <h1 className="font-title text-white tracking-wide text-5xl text-shadow2">
+        <h1 className="font-title italic text-white tracking-wide text-5xl text-shadow2">
           Feel Your Appetite
         </h1>
         <p className="mt-8 mb-12 text-xl font-serif text-green-darkest">

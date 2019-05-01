@@ -19,7 +19,7 @@ const FoodResult = ({ selectedMood }) => {
           You should eat...
         </FadeFromLeft>
         <FadeFromLeft delay={1200} className="mt-4">
-          <h1 className="font-title mb-4 text-4xl  sm:text-5xl">
+          <h1 className="font-title italic mb-4 text-4xl  sm:text-5xl">
             {result.name}
           </h1>
           <ImageSearch
