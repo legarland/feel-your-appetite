@@ -54,7 +54,7 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
       inputProps={{
         className:
           'w-full p-5 bg-white focus:shadow-none font-serif shadow-lg focus:rounded-b-none rounded-lg outline-none text-2xl transition-fast',
-        placeholder: 'Enter or select a mood..',
+        placeholder: 'Enter or select a mood.',
         onFocus: () => {
           console.log('resetting')
           setValue('')
@@ -64,7 +64,7 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
       onChange={event => setValue(event.target.value)}
       onSelect={(val, item) => {
         input.blur()
-        setValue(val)
+        setValue(`${val} ${item.emojis[0]}`)
         changeMood(item)
       }}
     />

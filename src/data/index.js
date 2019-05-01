@@ -1,5 +1,6 @@
 export const moods = [
   { name: 'Amused', emojis: ['🤣'], related: [], type: 'positive' },
+  { name: 'Adventurous', emojis: ['🤔'], related: [], type: 'positive' },
   { name: 'Ecstatic', emojis: ['😁'], type: 'positive' },
   { name: 'Like a King', emojis: ['👑'], related: [], type: 'positive' },
   { name: 'Excited', emojis: ['😃'], related: [], type: 'positive' },
@@ -30,7 +31,8 @@ export const moods = [
   { name: 'Stressed', emojis: ['😫'], related: [], type: 'negative' },
   { name: 'Upset', emojis: ['😢'], related: [], type: 'negative' },
   { name: 'Weird', emojis: ['🙃'], related: [], type: 'negative' },
-  { name: 'Lazy', emojis: ['😴'], related: [], type: 'negative' }
+  { name: 'Lazy', emojis: ['😫'], related: [], type: 'negative' },
+  { name: 'Sleepy', emojis: ['😴'], related: [], type: 'negative' }
 ]
 
 export const food = [
@@ -80,18 +82,7 @@ export const food = [
   },
   {
     name: 'Pizza',
-    moods: [
-      'Lazy',
-      'Happy',
-      'Sad',
-      'Grumpy',
-      'Bad',
-      'Silly',
-      'Weird',
-      'Upset',
-      'Rejected',
-      'Devastated'
-    ]
+    moods: ['*']
   },
   {
     name: 'Fried Chicken',
@@ -103,91 +94,109 @@ export const food = [
   },
   {
     name: 'Ramen Noodles',
-    moods: ['Annoyed', 'Lazy', '<Indifferent></Indifferent>']
+    moods: ['Annoyed', 'Lazy', 'Indifferent', 'Sympathetic']
   },
   {
     name: 'Orange',
     moods: ['Weird', 'Silly']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Chocolate Covered Straweberries',
+    moods: ['In Love', 'Peaceful', 'Flirty']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Funnel Cake',
+    moods: ['Amused', 'Mellow', 'Ecstatic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Ice Cream',
+    moods: ['Sad', 'Depressed', 'Devastated', 'Upset', 'Bad', 'Sympathetic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Bread Bowl Soup',
+    moods: ['Apathetic', 'Indifferent']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Spaghetti',
+    moods: ['Lazy', 'Nostalgic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Hamburger',
+    moods: ['Stressed', 'Lazy', 'Indifferent']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Bacon',
+    moods: ['Like a King', 'Happy', 'Sad']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Steak',
+    moods: ['Like a King', 'Ecstatic']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Cheesecake',
+    moods: ['Happy', 'Sad', 'Depressed', 'Excited', 'Ecstatic', 'Melancholy']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Filet Minon',
+    moods: ['Like a King', 'Advenurous']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Whole Chicken',
+    moods: ['Like a King']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Fried Chicken',
+    moods: ['Mellow', 'Lazy', 'Nostalgic', 'Apathetic', 'Irritated']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Candy',
+    moods: [
+      'Sad',
+      'Melancholy',
+      'Depressed',
+      'Upset',
+      'In Love',
+      'Stressed',
+      'Weird',
+      'Sleepy'
+    ]
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Sushi',
+    moods: ['Adventurous', 'Excited', 'Ecstatic', 'Flirty', 'Weird']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Chocolate',
+    moods: [
+      'Sad',
+      'Melancholy',
+      'Depressed',
+      'Upset',
+      'In Love',
+      'Stressed',
+      'In Love',
+      'Flirty'
+    ]
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Pancakes',
+    moods: ['Mellow', 'Good', 'Happy', 'Peaceful']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Waffles',
+    moods: ['Ecstatic', 'Adventurous', 'Sad', 'Upset']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Fruit Loops',
+    moods: ['Sleepy', 'Lazy']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Banana',
+    moods: ['Sleepy', 'Weird', 'Silly', 'Happy']
   },
   {
-    name: '',
-    moods: ['', '']
+    name: 'Peanuts',
+    moods: ['Weird', 'Lazy', 'Silly', 'Apathetic', 'Mellow']
   },
   {
     name: '',
@@ -236,4 +245,4 @@ export const food = [
 ]
 
 export const getFoodbyMood = mood =>
-  food.filter(f => f.moods.indexOf(mood) !== -1)
+  food.filter(f => f.moods.indexOf(mood) !== -1 || f.moods.indexOf('*') !== -1)

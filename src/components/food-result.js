@@ -15,7 +15,7 @@ const FoodResult = ({ selectedMood }) => {
         <FadeFromLeft delay={200} className="text-3xl">
           Feeling {selectedMood.name}?
         </FadeFromLeft>
-        <FadeFromLeft delay={700} className="text-2xl  mt-8">
+        <FadeFromLeft delay={700} className="text-2xl  mt-6">
           You should eat...
         </FadeFromLeft>
         <FadeFromLeft delay={1200} className="mt-4">
