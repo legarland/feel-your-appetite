@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './App.css'
 import FoodResult from './components/food-result'
 import MoodSearch from './components/mood-search'
 
