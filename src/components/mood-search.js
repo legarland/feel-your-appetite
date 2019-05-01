@@ -16,24 +16,32 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
     <Autocomplete
       ref={ac => (input = ac)}
       getItemValue={item => item.name}
-      items={moods.sort((a, b) => a.name.localeCompare(b.name))}
+      items={moods
+        .filter(m => m.type === 'positive')
+        .sort((a, b) => a.name.localeCompare(b.name))}
       wrapperStyle={{
         display: 'block'
       }}
-      menuStyle={{
-        background: 'rgba(255,255,255,1)',
-        borderBottomRightRadius: '.5rem',
-        borderBottomLeftRadius: '.5rem',
-        maxHeight: '40vh',
-        overflowY: 'scroll'
-      }}
+      renderMenu={(items, val, style) => (
+        <div style={{ ...style }} className="dropdown">
+          {items}
+        </div>
+      )}
       renderItem={(item, isHighlighted) => (
         <div
           key={item.name}
-          className={`text-left p-4 m-2 hover:gradient-reverse font-serif ${isHighlighted &&
+          style={{ border: 'solid 1px lightgray' }}
+          className={`text-left p-4 m-2 hover:gradient-reverse font-serif flex flex-1 items-center cursor-pointer ${isHighlighted &&
             'gradient-reverse '} rounded-lg`}
         >
-          {item.name}
+          <span style={{ marginRight: 10 }}>{item.name}</span>
+          <span
+            style={{
+              transform: 'translateY(2px)'
+            }}
+          >
+            {item.emojis.length && item.emojis[0]}
+          </span>
         </div>
       )}
       shouldItemRender={
