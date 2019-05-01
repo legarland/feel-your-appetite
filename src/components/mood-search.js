@@ -17,7 +17,7 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
       ref={ac => (input = ac)}
       getItemValue={item => item.name}
       items={moods
-        .filter(m => m.type === 'positive')
+        // .filter(m => m.type === 'positive')
         .sort((a, b) => a.name.localeCompare(b.name))}
       wrapperStyle={{
         display: 'block'
@@ -54,7 +54,7 @@ const MoodSearch = ({ onMoodChange = () => {} }) => {
       inputProps={{
         className:
           'w-full p-5 bg-white focus:shadow-none font-serif shadow-lg focus:rounded-b-none rounded-lg outline-none text-2xl transition-fast',
-        placeholder: 'Enter a mood..',
+        placeholder: 'Enter or select a mood..',
         onFocus: () => {
           console.log('resetting')
           setValue('')

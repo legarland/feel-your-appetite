@@ -65,10 +65,10 @@ code {
   background: rgba(255,255,255,1);
   border-bottom-right-radius: .5rem;
   border-bottom-left-radius: .5rem;
-  max-height: 38vh;
+  max-height: 42vh;
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media (max-width: 480px) {

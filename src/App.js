@@ -16,10 +16,10 @@ class App extends Component {
 
     return (
       <div className="container text-center p-4 sm:p-0 mx-auto mt-12 mb-12">
-        <h1 className="font-title text-white tracking-wide text-6xl text-shadow2">
+        <h1 className="font-title text-white tracking-wide text-5xl text-shadow2">
           Feel Your Appetite
         </h1>
-        <p className="mt-8 mb-16 text-2xl font-serif text-green-darkest">
+        <p className="mt-8 mb-12 text-xl font-serif text-green-darkest">
           Find something to eat based on how you feel at the moment.
         </p>
         <MoodSearch
@@ -30,6 +30,40 @@ class App extends Component {
             <FoodResult key="mood" selectedMood={selectedMood} />
           )}
         </section>
+        <footer className="text-black mt-8">
+          <div className="mb-1">
+            Site by{' '}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              className="no-underline text-blue
+               font-bold"
+              href="https://www.twitter.com/floppycatfish"
+            >
+              @floppycatfish
+            </a>
+          </div>
+          Idea by{' '}
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            className="no-underline text-blue
+             font-bold"
+            href="https://www.twitter.com/mericmandrews"
+          >
+            @MericMandrews
+          </a>{' '}
+          on the{' '}
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            className="no-underline text-blue
+             font-bold"
+            href="https://www.twitter.com/markforwardpod"
+          >
+            @MarkForwardPod
+          </a>
+        </footer>
       </div>
     )
   }

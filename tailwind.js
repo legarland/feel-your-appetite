@@ -54,7 +54,8 @@ const colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   white: '#ffffff',
-  'white-semi-transparent': 'rgba(255,255,255,.5)'
+  'white-semi-transparent': 'rgba(255,255,255,.5)',
+  blue: '#2AA3EF'
 }
 
 module.exports = {
